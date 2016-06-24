@@ -2,7 +2,7 @@
 
 stage 'Dev'
 node {
-    checkout scm
+    checkout https://github.com/Stackato-Apps/hello-java.git
     mvn 'clean package'
     dir('target') {stash name: 'war', includes: 'x.war'}
 }
