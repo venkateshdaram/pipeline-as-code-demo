@@ -2,7 +2,7 @@
 
 stage 'Dev'
 node {
-    git 'https://github.com/Stackato-Apps/hello-java.git'
+    git 'https://github.com/spring-projects/greenhouse.git'
     mvn 'clean package'
     dir('target') {stash name: 'war', includes: 'x.war'}
 }
